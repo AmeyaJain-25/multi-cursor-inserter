@@ -3,7 +3,7 @@
   "displayName": "Multi-Cursor Inserter",
   "description": "Insert incrementing numbers with various presets at multiple cursors.",
   "publisher": "AmeyaJain-25",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.70.0"
   },

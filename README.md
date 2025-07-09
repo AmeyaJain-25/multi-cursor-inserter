@@ -12,7 +12,7 @@ A VS Code extension to insert incrementing numbers at multiple cursors with cust
 ## Commands
 
 - **Insert Incrementing Numbers with Prefix**  
-  Inserts numbers with a user-specified prefix (default: `_start`).  
+  Inserts numbers with a user-specified prefix (default: `start_`).  
   Keybinding: `Cmd + Alt + P`
 
 - **Insert Incrementing Numbers with Suffix**  

@@ -33,7 +33,7 @@ async function getUserInputs(
     prefix =
       (await vscode.window.showInputBox({
         prompt: "Prefix",
-        value: "_start",
+        value: "start_",
       })) ?? "";
   } else if (style === "suffix") {
     suffix =
