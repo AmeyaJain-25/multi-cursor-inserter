@@ -1,0 +1,69 @@
+{
+  "name": "multi-cursor-inserter",
+  "displayName": "Multi-Cursor Inserter",
+  "description": "Insert incrementing numbers with various presets at multiple cursors.",
+  "publisher": "AmeyaJain-25",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:multiCursorInserter.insertIncrementingWithPrefix",
+    "onCommand:multiCursorInserter.insertIncrementingWithSuffix",
+    "onCommand:multiCursorInserter.insertIncrementingPlain"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "multiCursorInserter.insertIncrementingWithPrefix",
+        "title": "Insert Incrementing Numbers with Prefix"
+      },
+      {
+        "command": "multiCursorInserter.insertIncrementingWithSuffix",
+        "title": "Insert Incrementing Numbers with Suffix"
+      },
+      {
+        "command": "multiCursorInserter.insertIncrementingPlain",
+        "title": "Insert Plain Incrementing Numbers"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "multiCursorInserter.insertIncrementingWithPrefix",
+        "key": "cmd+alt+p",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiCursorInserter.insertIncrementingWithSuffix",
+        "key": "cmd+alt+s",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiCursorInserter.insertIncrementingPlain",
+        "key": "cmd+alt+n",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AmeyaJain-25/multi-cursor-inserter"
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.70.0",
+    "typescript": "^4.9.0",
+    "vsce": "^2.15.0"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}

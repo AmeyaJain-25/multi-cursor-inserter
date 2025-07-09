@@ -1,0 +1,17 @@
+# Ignore source files and config
+src/
+tsconfig.json
+.vscode/
+README.md
+LICENSE
+.gitignore
+*.ts
+*.map
+
+# Node modules
+node_modules/
+
+# Dev tools / logs
+*.log
+*.test.*
+*.spec.*
